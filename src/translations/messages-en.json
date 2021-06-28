@@ -1,4 +1,10 @@
 {
-	"heading": "Phrase POC",
-	"steps": "Steps"
+  "heading": "Hello, this is POC for Phrase",
+  "steps": "Basic steps to kick start with phrase",
+  "steps_listing": [
+    "Create a separate project on Phase, add all the locales",
+    "create .phrase.yml file",
+    "enable github sync and github autoimport",
+    "enable autofill"
+  ]
 }
