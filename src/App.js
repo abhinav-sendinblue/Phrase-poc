@@ -18,7 +18,7 @@ function App() {
         <FormattedMessage id="heading" />
       </h3>
       <p>
-        Steps:-
+        <FormattedMessage id="steps" />:-
         {
           steps.map((li, i)=><li key={i}>{li}</li>)
         }
