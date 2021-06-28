@@ -1,15 +1,5 @@
 import { FormattedMessage } from 'react-intl';
-
-const steps = [
-  "Create a separate project on Phase, add all the locales",
-  "enable github sync and Personal access token, enable autofill",
-  "install phrase in local pc, (brew install phrase)",
-  "(af-phraseapp) vs code extention to autofind translation",
-  "install react-intl",
-  "create a EN translation file",
-  "Push branch on github",
-  "Check all the keys new key react there or not",
-]
+import {steps_listing} from './translations/messages-en.json';
 
 function App() {
   return (
@@ -20,7 +10,7 @@ function App() {
       <p>
         <FormattedMessage id="steps" />:-
         {
-          steps.map((li, i)=><li key={i}>{li}</li>)
+          steps_listing.map((li, i)=><li key={i}>{li}</li>)
         }
       </p>
     </div>
