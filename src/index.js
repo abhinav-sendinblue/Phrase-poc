@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { IntlProvider } from 'react-intl';
+import messages from './translations/messages-en.json';
+
+export function flattenMessages(nestedMessages = {}, prefix = '') {
+	return Object.keys(nestedMessages).reduce((messages, key) => {
+		const value = nestedMessages[key];
+		const prefixedKey = prefix ? `${prefix}.${key}` : key;
+		if (typeof value === 'string') {
+			messages[prefixedKey] = value;
+		} else {
+			Object.assign(messages, flattenMessages(value, prefixedKey));
+		}
+		return messages;
+	}, {});
+}
+
+const flattenMessage = flattenMessages(messages);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<IntlProvider locale="en" messages={flattenMessage}>
+			<App />
+		</IntlProvider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
