@@ -4,7 +4,7 @@
   "steps_listing": [
     "Create a separate project on Phase, add all the locales",
     "create .phrase.yml file",
-    "enable github sync and github autoimport",
+    "enable GitHub sync and GitHub auto-import",
     "enable autofill"
   ]
 }
