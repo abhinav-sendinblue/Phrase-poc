@@ -1,0 +1,31 @@
+phrase:
+  project_id: 7f29b98144e1ea1d9d75565cfe8afe23
+  push: 
+    sources:
+    - file: ./src/translations/messages-en.json
+      params: 
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+  pull:
+    targets:
+    - file: ./src/translations/messages-de.json
+      params:
+        file_format: simple_json
+        locale_id: de
+    - file: ./src/translations/messages-fr.json
+      params:
+        file_format: simple_json
+        locale_id: fr
+    - file: ./src/translations/messages-pt.json
+      params:
+        file_format: simple_json
+        locale_id: pt
+    - file: ./src/translations/messages-it.json
+      params:
+        file_format: simple_json
+        locale_id: it
+    - file: ./src/translations/messages-es.json
+      params:
+        file_format: simple_json
+        locale_id: es
