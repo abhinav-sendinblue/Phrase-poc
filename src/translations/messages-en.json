@@ -1,10 +1,11 @@
 {
-	"heading": "Phrase POC",
-	"steps": "Steps",
-	"steps_listing": [
-		"Create a separate project on Phase, add all the locales",
-		"create .phrase.yml file",
-		"enable github sync and github autoimport", 
-		"enable autofill"
-	]
+  "heading": "Hello, this is POC for Phrase",
+  "steps": "Basic steps to kick start with phrase",
+  "steps_listing": [
+    "Create a separate project on Phase, add all the locales",
+    "create .phrase.yml file",
+    "enable GitHub sync and GitHub auto-import",
+    "enable autofill",
+    "Testing 3.4"
+  ]
 }
