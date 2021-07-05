@@ -6,6 +6,6 @@
     "create .phrase.yml file",
     "enable GitHub sync and GitHub auto-import",
     "For auto-import from github need to create a webhook on github",
-    "enable autofill 1"
+    "enable autofill"
   ]
 }
