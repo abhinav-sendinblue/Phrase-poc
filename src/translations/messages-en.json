@@ -5,7 +5,7 @@
     "Create a separate project on Phase, add all the locales",
     "create .phrase.yml file",
     "enable GitHub sync and GitHub auto-import",
-    "enable autofill",
-    "Testing 3.4"
+    "For auto-import from github need to create a webhook on github",
+    "enable autofill"
   ]
 }
